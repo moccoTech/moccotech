@@ -12,20 +12,25 @@ function ContactForm() {
   const { errors } = formState;
 
   function onSubmit(data) {
-    sendEmail(data);
+    const res = sendEmail(data);
+
+    toast.promise(res, {
+      loading: 'Sending...',
+      success: 'Your message successfully sent!',
+      error: 'Error when sending',
+    });
 
     reset();
     if (isActiveModal) {
       handleModal();
     }
-    toast.success('Your message successfully sent!', { duration: 5000 });
   }
 
   return (
-    <div className="flex justify-center items-center ">
+    <div className="flex justify-center items-center w-full">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-4 min-w-80 sm:min-w-[600px] "
+        className="flex flex-col gap-4 min-w-80 sm:max-w-[600px] w-full"
       >
         <div>
           <input

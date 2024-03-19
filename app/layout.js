@@ -2,12 +2,13 @@
 
 import { Montserrat_Alternates, Montserrat } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Toaster } from 'react-hot-toast';
 
 import './globals.css';
 import { ModalProvider } from './context/ModalContext';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
-import { Toaster } from 'react-hot-toast';
 
 const headingsFont = Montserrat_Alternates({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <SpeedInsights />
         </ModalProvider>
       </body>
     </html>

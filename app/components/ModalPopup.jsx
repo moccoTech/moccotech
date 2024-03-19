@@ -22,7 +22,7 @@ function ModalPopup() {
         opacity: 0,
       }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
-      className="w-full h-dvh fixed top-0 right-0 z-30 flex items-center justify-center flex-col"
+      className="w-full h-dvh fixed top-0 right-0 z-30 flex items-center justify-center flex-col px-5"
     >
       <motion.button
         animate={{ rotate: '180deg', scale: 1.25 }}
