@@ -34,7 +34,7 @@ function ModalPopup() {
         <HiXMark />
       </motion.button>
       <motion.div
-        className="flex flex-col gap-5 items-start"
+        className="flex flex-col gap-5 items-start md:min-w-[600px]"
         initial={{
           opacity: 0,
           y: 20,

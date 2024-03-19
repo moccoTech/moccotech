@@ -1,3 +1,5 @@
+'use client';
+
 import { useModal } from '@/app/context/ModalContext';
 import Button from '../Button';
 import ModalPopup from '../ModalPopup';

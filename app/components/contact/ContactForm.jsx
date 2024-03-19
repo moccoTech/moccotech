@@ -30,7 +30,7 @@ function ContactForm() {
     <div className="flex justify-center items-center w-full">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-4 min-w-80 sm:max-w-[600px] w-full"
+        className="flex flex-col gap-4 w-full"
       >
         <div>
           <input

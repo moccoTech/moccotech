@@ -1,5 +1,3 @@
-'use client';
-
 import { Montserrat_Alternates, Montserrat } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
 import { SpeedInsights } from '@vercel/speed-insights/next';
