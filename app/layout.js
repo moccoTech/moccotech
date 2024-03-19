@@ -3,6 +3,7 @@
 import { Montserrat_Alternates, Montserrat } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 import { Toaster } from 'react-hot-toast';
 
 import './globals.css';
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
           <SpeedInsights />
+          <Analytics />
         </ModalProvider>
       </body>
     </html>
